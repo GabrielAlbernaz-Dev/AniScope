@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,li {
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  display: block;
+}
+
+:root {
+  --purple:#52397B;
+  --purple-dark:#2e1a4f;
+  --light-purple:#A188CA;
+  --yellow:#F0B71F;
+  --red:#FF1744;
+  --blue:#3D5AFE;
+  --white:#ffff;
+  --gray:#ddd;
+  --opacity-text:rgb(161 161 170/1);
+  --type-first:'Spectral', serif;
+  --quote-size:4rem;
+  --subtitle-size:3.5rem;
+  --title-size:4.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--type-first);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--purple);
+}
+
+a[aria-current="page"] {
+  color: var(--yellow);
+}
+
+.container {
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cta {
+  font-size: 1.8rem;
+  font-family: var(--type-first);
+  background:transparent;
+  border: 2px solid var(--yellow);
+  border-bottom: 8px solid var(--yellow);
+  border-radius: 100px;
+  padding: .3rem 1.5rem;
+  color: var(--yellow);
+  font-weight: 600;
+  transition: .1s;
+}
+
+.cta:hover {
+  background:var(--yellow);
+  color: var(--white);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.flex-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.full-height {
+  min-height: calc(90vh - .7rem);
+  padding-top: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.loading-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8rem;
+  margin-top: 3rem;
+}
+
+.animeTransition {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeTransition .3s forwards;
+}
+
+.navActiveMobile {
+  transform: translateX(0)!important;
+}
+
+@keyframes animeTransition {
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+      transform: initial;
   }
 }

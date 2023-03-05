@@ -1,0 +1,39 @@
+.notFoundContainer {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundImage {
+    max-width:35rem;
+}
+
+.notFoundText {
+    color: var(--light-purple);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.notFoundButton {
+    font-size:2rem;
+    background: var(--yellow);
+    color: #000;
+    min-width: 8rem;
+    border:2px solid transparent;
+    border-radius: .8rem;
+    padding:1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.notFoundButton:hover {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--yellow);
+}

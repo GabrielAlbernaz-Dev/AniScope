@@ -1,0 +1,46 @@
+.textContainer {
+    margin-bottom: 3rem;
+    padding: 0 2.5rem;
+}
+
+.text {
+    color: var(--light-purple);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ctaContainer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.more {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--type-first);
+    background:var(--purple-dark);
+    color: var(--white);
+    border-radius: 100px;
+    padding: .3rem 1.5rem;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.more:hover {
+    background:var(--white);
+    color: var(--purple-dark);
+}
+
+.randomSection {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+    margin:8rem 0;
+}
+
+.factSection {
+    margin:8rem 0;
+}
