@@ -29,7 +29,6 @@ const Questions = () => {
   function checkResults() {
     const corrects = quizContext.questions.filter((question,i) => Object.values(quizData)[i] === question.correct);
     setCorrects(corrects);
-    console.log(corrects);
   }
 
   function handleSlide() {
@@ -58,8 +57,8 @@ const Questions = () => {
         handleClick={handleSlide}
         onChange={handleQuestionChange}
       />)}
-      {corrects && <Correct corrects={corrects.length} questions={questionLength}/>}
-      {corrects &&
+      {corrects ? <Correct corrects={corrects.length} questions={questionLength}/> : ''}
+      {corrects ?
         <div className={styles.correctQuestionContainer}>
           { 
           corrects.map(correct => 
@@ -68,7 +67,7 @@ const Questions = () => {
             <FaCheck color="var(--yellow)" />
           </div>)}
           <Link to="/quiz" className={styles.quizButtonBack}>Back to another quiz!</Link>
-        </div>
+        </div> : ''
       }
     </MainSection>
   )
