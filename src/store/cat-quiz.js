@@ -12,7 +12,7 @@ export const data = [
     question: 'Which of the following is not a breed of cat?',
     correct: 'cat-question-2-4',
     source:
-      'https://images.unsplash.com/photo-1612258689092-8ca077ecf417?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      'https://images.unsplash.com/photo-1676096421624-0318e046a739?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
     answers: [
       { text: 'Siamese cat', name: 'cat-question-2-1' },
       { text: 'Savannah cat', name: 'cat-question-2-2' },

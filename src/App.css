@@ -111,3 +111,9 @@ a[aria-current="page"] {
       transform: initial;
   }
 }
+
+@media screen and (max-width:767px) {
+  :root {
+    --quote-size:3rem;
+  }
+}

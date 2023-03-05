@@ -44,3 +44,10 @@
 .factSection {
     margin:8rem 0;
 }
+
+@media screen and (max-width:767px) {
+    .randomSection {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
